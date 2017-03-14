@@ -7,6 +7,8 @@ Webpack starter for developers trying to develop websites or apps with the moder
 * [x] BrowserSync
 
 
+Prepare for 0.9
+
 ### Need to solve:
 
 * [ ] Extract Text Problem
