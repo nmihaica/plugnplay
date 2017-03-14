@@ -4,7 +4,7 @@
 Webpack starter for developers trying to develop websites or apps with the modern tooling.
 
 * [x] [HMR]
-* [x] BrowserSync
+* [ ] BrowserSync
 
 
 Prepare for 0.9
