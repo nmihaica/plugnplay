@@ -8,9 +8,10 @@
  var cssDev = ['style-loader', 'css-loader', 'sass-loader'];
  var cssProd = ExtractTextPlugin.extract({
      fallback: 'style-loader',
-     loader: ['css-loader', 'sass-loader'],
+     use: ['css-loader', 'sass-loader'],
      publicPath: '/dist'
  })
+
 
  var cssConfig = isProduction ? cssProd : cssDev;
  module.exports = {
@@ -66,7 +67,7 @@
          }),
          new ExtractTextPlugin({
              filename: 'styles.css',
-             disabled: !isProduction,
+             disable: !isProduction,
              allChunks: true
          }),
          new webpack.HotModuleReplacementPlugin(),
