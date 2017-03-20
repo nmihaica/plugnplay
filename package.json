@@ -4,18 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
+    "webpack": "webpack --watch-content-base",
     "dev": "webpack-dev-server",
-    "build": "npm run clean && webpack -p",
+    "build": "npm run clean && npm run move-fav && NODE_ENV=production webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf ./dist/*",
-    "remove": "rm -rf ./node_modules"
+    "remove": "rm -rf ./node_modules",
+    "move-fav": "cp ./src/favicon.ico ./dist/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-preset-es2015": "^6.24.0",
+    "browser-sync": "^2.18.8",
+    "browser-sync-webpack-plugin": "^1.1.4",
     "css-loader": "^0.27.3",
     "extract-text-webpack-plugin": "^2.0.0-rc.0",
     "gulp": "^3.9.1",
