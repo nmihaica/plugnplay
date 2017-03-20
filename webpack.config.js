@@ -52,7 +52,8 @@
              // plugin options 
              {
                  // prevent BrowserSync from reloading the page 
-                 // and let Webpack Dev Server take care of this 
+                 // and let Webpack Dev Server take care of this reload:false
+
                  reload: false
              }
          ),
