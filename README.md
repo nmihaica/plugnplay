@@ -7,7 +7,7 @@
 #### Info
 
 Basic Webpack 2 + BrowserSync project template.
-Webpack starter for developers trying to develop websites or apps with the minimal but modern tooling.
+Webpack starter for developers trying to develop websites or apps with minimal but modern tooling.
 
 * [x] [Sass]
 * [x] [HMR]
